@@ -1,9 +1,12 @@
 # linimp_KdV
 Local and global energy-preserving methods for the Korteweg-de Vries (KdV) equation.
 
-Recommended packages/tools: None.
+Recommended packages/tools in Matlab: None.
+Recommended packages in Python: numpy, time, scipy.sparse, matplotlib.pyplot.
 
-This code is meant as a supplement to [1], and is an implementation of the linearly implicit methods preserving a discrete approximation to local and global conservation laws for the KdV equation. Please refer to [1] if this code is used in a project. Also implemented are the fully implicit local and global energy preserving schemes of [2] and the implicit midpoint and multi-symplectic box schemes of [3].
+This code is meant as a supplement to [1], and is an implementation of the linearly implicit methods preserving a discrete approximation to local and global conservation laws for the KdV equation. Please refer to [1] if this code is used in a project. Also implemented are the fully implicit local and global energy preserving schemes of [2] and (in the Matlab code) the implicit midpoint and multi-symplectic box schemes of [3].
+
+The Python code is less efficient than the Matlab code. This is because the solving of the linear systems is not optimized.
 
 This is the first release, so if you have comments and suggestions for improvements, please contact me and I will try to accommodate them.
 
